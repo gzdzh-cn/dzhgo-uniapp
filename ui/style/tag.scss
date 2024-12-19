@@ -1,0 +1,64 @@
+@mixin color($color) {
+	background-color: $color;
+
+	&.is-plain {
+		color: $color;
+		border-collapse: $color;
+		background-color: #fff;
+	}
+}
+
+.cl-tag {
+	border-radius: 6rpx;
+	padding: 0 20rpx;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	font-size: 24rpx;
+
+	&__close {
+		margin-left: 10rpx;
+	}
+
+	&--default {
+		min-height: 48rpx;
+	}
+
+	&--small {
+		min-height: 40rpx;
+	}
+
+	&.is-round {
+		border-radius: 48rpx;
+	}
+
+	&.is-plain {
+		border-width: 1rpx;
+		border-style: solid;
+	}
+
+	&--primary {
+		@include color($cl-color-primary);
+	}
+
+	&--success {
+		@include color($cl-color-success);
+	}
+
+	&--warning {
+		@include color($cl-color-warning);
+	}
+
+	&--error {
+		@include color($cl-color-error);
+	}
+
+	&--info {
+		@include color($cl-color-info);
+	}
+}
+
+.cl-tag + .cl-tag,
+cl-tag + cl-tag {
+	margin-left: 20rpx;
+}

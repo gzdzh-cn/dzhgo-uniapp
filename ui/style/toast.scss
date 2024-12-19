@@ -1,0 +1,87 @@
+.cl-toast {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: $cl-border-radius;
+	padding: 8rpx 16rpx;
+	max-width: 80%;
+
+	&__icon {
+		text {
+			font-size: 80rpx;
+			color: #eee;
+		}
+
+		image {
+			display: block;
+			height: 80rpx;
+			width: 80rpx;
+		}
+	}
+
+	&__content {
+		color: #fff;
+		font-size: 26rpx;
+		text-align: center;
+	}
+
+	&--default {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	&--primary {
+		background-color: $cl-color-primary;
+	}
+
+	&--success {
+		background-color: $cl-color-success;
+	}
+
+	&--error {
+		background-color: $cl-color-error;
+	}
+
+	&--warning {
+		background-color: $cl-color-warning;
+	}
+
+	&--info {
+		background-color: $cl-color-info;
+	}
+
+	&.is-icon {
+		min-height: 140rpx;
+		min-width: 140rpx;
+		padding: 30rpx;
+
+		.cl-toast__content {
+			margin-top: 20rpx;
+		}
+	}
+}
+
+.cl-toast__wrap {
+	.cl-popup {
+		width: 100% !important;
+
+		&__wrapper {
+			pointer-events: none;
+
+			&--top {
+				top: 100rpx;
+				top: calc(env(safe-area-inset-top) + 100rpx);
+			}
+
+			&--bottom {
+				bottom: 100rpx;
+				bottom: calc(env(safe-area-inset-bottom) + 100rpx);
+			}
+		}
+
+		&__container {
+			text-align: center;
+			width: 100%;
+		}
+	}
+}

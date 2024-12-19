@@ -1,0 +1,27 @@
+{
+    "id": "dzh-wxlogin",
+    "displayName": "微信小程序授权登录2022-10最新版 ",
+    "version": "1.0.0",
+    "description": "此登录组件用了uview弹窗组件u-popup和图标组件u-icon，没安装uview可自行修改  ",
+    "keywords": [
+        "授权登录",
+        "微信小程序登录",
+        "最新授权登录"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ],
+        "contact": {
+            "qq": ""
+        },
+        "declaration": {
+            "ads": "示例包含微信小程序流量主组件",
+            "data": "无",
+            "permissions": "无"
+        },
+        "npmurl": ""
+    },
+    "repository": ""
+}
